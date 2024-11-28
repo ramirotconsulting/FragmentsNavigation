@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main.xml"
+    app:startDestination="@id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.creators.fragmentsnavigation.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" />
+    <fragment
+        android:id="@+id/nav_scrolling"
+        android:name="com.creators.fragmentsnavigation.ScrollingFragment"
+        android:label="@string/menu_scrolling"
+        tools:layout="@layout/scrolling_fragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.creators.fragmentsnavigation.SettingsFragment"
+        android:label="@string/menu_setting" />
+</navigation>
